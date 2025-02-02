@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gameList>
+  <game>
+    <path>./Undertale Green.sh</path>
+    <name>Undertale Green</name>
+    <desc>Fan-made prequel to Undertale about the green soul (kindness)</desc>
+    <releasedate>20180101T000000</releasedate>
+    <developer>Migs</developer>
+    <genre>RPG</genre>
+    <image>./utgreen/cover.png</image>
+  </game>
+</gameList>

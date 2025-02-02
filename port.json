@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "name": "utgreen.zip",
+  "items": [
+    "Undertale Green.sh",
+    "utgreen"
+  ],
+  "items_opt": [],
+  "attr": {
+    "title": "Undertale Green",
+    "porter": [
+      "regularcharacter"
+    ],
+    "desc": "Fan-made prequel to Undertale about the green soul (kindness)",
+    "desc_md": null,
+    "inst": "Download the fangame and unzip the exe with 7zip (or alternatives like nanazip) to the utgreen/assets folder",
+    "inst_md": null,
+    "genres": [
+      "rpg"
+    ],
+    "image": null,
+    "rtr": false,
+    "exp": false,
+    "runtime": null,
+    "reqs": [],
+    "arch": [
+      "armhf"
+    ],
+    "min_glibc": ""
+  }
+}
