@@ -6,7 +6,7 @@ Thanks to [Migs](https://gamejolt.com/@Migs) for creating this game.
 |Button|Action|
 |--|--|
 |dpad|movement|
-|left analog|Move|
+|left analog|movement|
 |A| Confirm|
 |B| Cancel|
 |X| Menu|
