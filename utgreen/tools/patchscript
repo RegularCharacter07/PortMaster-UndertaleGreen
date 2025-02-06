@@ -23,22 +23,14 @@ chmod 777 "$TOOLDIR/oggenc"
 
 cd "$GAMEDIR"
 
-apply_xdelta() {
+rename_data() {
     # Check if the data.win file exists and apply xdelta
     if [ -f "$DATADIR/data.win" ]; then
-        # Xdelta created with Steam game version
-        output=$(xdelta3 -d -s "$DATADIR/data.win" -f "./tools/patches/utgreen.xdelta" "$DATADIR/game.droid" 2>&1)
-        if [ $? -eq 0 ]; then
-            echo "Patch applied successfully"
-            echo "$output"
-            rm "$DATADIR/data.win"
-        else
-            echo "Failed to apply patch"
-            echo "$output"
-            exit 1
-        fi
+        # Rename the data.win file to game.droid
+        mv "$DATADIR/data.win" "$DATADIR/game.droid"
+        echo "data.win renamed to game.droid"
     else
-        echo "No data.win file found to patch!"
+        echo "No data.win file found!"
     fi
 }
 
@@ -74,8 +66,8 @@ process_game() {
     rm -rf $DATADIR/*.exe $DATADIR/*.dll $DATADIR/.gitkeep $DATADIR/gamedat
     echo "Removed unnecessary files"
     
-    echo "Applying xdelta patch"
-    apply_xdelta
+    echo "Renaming data.win"
+    rename_data
     sleep 1
     echo "Compressing audio..."
     compress_audio
